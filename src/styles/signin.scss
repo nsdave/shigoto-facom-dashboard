@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+
+@media screen and  (max-width: 490px) {
+    
+.sign__body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 16px;
+    width: 80%;
+    margin-top: 30%;
+    border: 1px lightgray solid;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 1.7rem;
+        color: #1E90FF;
+        font-size: 29px;
+        font-family: 'Lora', serif;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 23px;
+        color: gray;
+    }
+
+    a {
+        display: flex;
+        width: 66%;
+        padding: 0.7rem 0;
+        align-self: center;
+        justify-content: center;
+        border-radius: 20rem;
+        text-decoration: none;
+        background-color: #1E90FF;
+
+        h4 {
+            color: white;
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+}
+
+.sign__input {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 3.4rem 0 3rem 0;
+
+    input {
+        width: 65%;
+        align-self: center;
+        text-decoration: none;
+        outline-style: none;
+        border: none;
+        padding-bottom: 10px;
+        border-bottom: 0.4px black solid;
+    }
+}
+}
