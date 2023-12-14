@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 
-
-@media screen and  (max-width: 490px) {
     
 .sign__body {
     display: flex;
@@ -13,6 +11,12 @@
     width: 80%;
     margin-top: 30%;
     border: 1px lightgray solid;
+
+    @media screen and (min-width: 480px) {
+        width: 55%;
+        margin-left: 19%;
+        margin-top: 5%;
+    }
 
     h2 {
         margin: 0;
@@ -61,5 +65,4 @@
         padding-bottom: 10px;
         border-bottom: 0.4px black solid;
     }
-}
 }

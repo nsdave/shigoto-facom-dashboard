@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 490px) {
+
     
 .dash__body {
     display: flex;
@@ -11,6 +11,10 @@
         text-align: center;
         margin-top: 13%;
         letter-spacing: 0.5px;
+
+        @media screen and (min-width: 480px) {
+            margin-top: 5%;
+        }
     }
 }
 
@@ -37,6 +41,10 @@ section {
     align-items: center;
     flex-direction: column;
 
+    @media screen and (min-width: 480px) {
+        margin-top: 5%;
+    }
+
     a {
         text-decoration: none;
         
@@ -53,6 +61,4 @@ section {
         border-radius: 26px;
         border: 1px solid grey;
     }
-}
-
 }
