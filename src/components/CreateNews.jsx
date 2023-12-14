@@ -91,6 +91,8 @@ const CreateNews = () => {
             Upload
         </button>
         </Link>
+
+        <p>1.2</p>
     </div>
   )
 }
