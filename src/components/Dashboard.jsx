@@ -19,12 +19,15 @@ const Dashboard = () => {
           </div>
         </Link>
         
-        <Link>
+        <Link
+        to={'/dash/delete'}
+        >
           <div>
             Delete
           </div>
         </Link>
       </section>
+
     </div>
   )
 }

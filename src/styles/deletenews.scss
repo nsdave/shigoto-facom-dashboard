@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+.delete__body {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        outline: none;
+        border-style: none;
+        border-radius: 20px;
+        padding: 0.6rem 1.4rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 0, 0, 0.692);
+        }
+    }
+
+    h2 {
+        font-size: 34px;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid black;
+        font-family: 'Lora', serif;
+    }
+    
+    h3 {
+        font-size: 17px;
+        margin: 0;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+        margin: 0 1rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            border-radius: 6px;
+            padding: 1.4rem 2rem;
+            gap: 1.4rem;
+        }
+    }
+}

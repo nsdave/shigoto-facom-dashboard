@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import '../styles/createnews.scss'
 import { supabase } from '../supabaseClient';
 import React from 'react'; 
+import { Menu } from '@headlessui/react';
 
 const CreateNews = () => {
     const [corn, setCorn] = React.useState({
@@ -11,8 +12,8 @@ const CreateNews = () => {
         set4: '',
         set5: 'few seconds ago' 
     })
+    const [gory, setGory] = React.useState('Select')
 
-    console.log(corn, 'corn data')
 
     const handleCorn = async () => {
         try {
@@ -24,7 +25,7 @@ const CreateNews = () => {
                     preview: corn.set2,
                     body: corn.set3,
                     time: corn.set5,
-                    source: corn.set4
+                    source: gory
                 }
             ]);
     
@@ -62,11 +63,41 @@ const CreateNews = () => {
             </section>
             <section>
                 <h3>Category</h3>
-                <input 
-                placeholder='Add news category' 
-                value={corn.set4}
-                onChange={(e) => cornRow('set4', e.target.value)}
-                />
+            <Menu >
+              <Menu.Button className='cn__menu__list' >{gory}</Menu.Button>
+              <Menu.Items className='cn__menu' >
+                <Menu.Item>
+                  <h5
+                  onClick={() => setGory('Events')}
+                  >Events</h5>
+                </Menu.Item>
+                <Menu.Item>
+                  <h5
+                  onClick={() => setGory('Sports')}
+                  >Sports</h5>
+                </Menu.Item>
+                <Menu.Item>
+                  <h5
+                  onClick={() => setGory('Innovation')}
+                  >Innovation</h5>
+                </Menu.Item>
+                <Menu.Item>
+                  <h5
+                  onClick={() => setGory('Academic')}
+                  >Academic</h5>
+                </Menu.Item>
+                <Menu.Item>
+                  <h5
+                  onClick={() => setGory('Top news')}
+                  >Top news</h5>
+                </Menu.Item>
+                <Menu.Item>
+                  <h5
+                  onClick={() => setGory('Official')}
+                  >Official</h5>
+                </Menu.Item>
+              </Menu.Items>
+            </Menu>
             </section>
             <section>
                 <h3>Body</h3>
@@ -92,7 +123,7 @@ const CreateNews = () => {
         </button>
         </Link>
 
-        <p>1.2</p>
+        <p>v1.3</p>
     </div>
   )
 }

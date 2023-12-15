@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Dashboard from './components/Dashboard.jsx'
 import CreateNews from './components/CreateNews.jsx'
+import DeleteNews from './components/DeleteNews.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/dash/create",
     element: <CreateNews />
+  },
+  {
+    path: "/dash/delete",
+    element: <DeleteNews />
   },
 ])
 
